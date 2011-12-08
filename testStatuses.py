@@ -19,11 +19,11 @@
 #        Date: 23/11/2011
 #        Modified: 02/12/2011
 
-import unittest
+import unittest2
 import logging
 from imgfac.qmfagent.ImageFactory import ImageFactory
 
-class testStatuses(unittest.TestCase):
+class testStatuses(unittest2.TestCase):
     def setUp(self):
         logging.basicConfig(level=logging.NOTSET, format='%(asctime)s %(levelname)s %(name)s pid(%(process)d) Message: %(message)s', filename='/tmp/imagefactory-unittests.log')
         self.module_name01 = "BuildAdaptor"
@@ -48,4 +48,4 @@ class testStatuses(unittest.TestCase):
         
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest2.main()

@@ -19,7 +19,7 @@
 #        Date: 25/11/2011
 #        Modified: 02/12/2011
 
-import unittest
+import unittest2
 import logging
 from imgfac.ImageWarehouse import ImageWarehouse
 from imgfac.ApplicationConfiguration import ApplicationConfiguration
@@ -27,7 +27,7 @@ import oauth2 as oauth
 import httplib2
 #import time
 
-class testOauthIwhd(unittest.TestCase):
+class testOauthIwhd(unittest2.TestCase):
     def setUp(self):
         logging.basicConfig(level=logging.NOTSET, format='%(asctime)s %(levelname)s %(name)s pid(%(process)d) Message: %(message)s', filename='/tmp/imagefactory-unittests.log')
         self.warehouse = ImageWarehouse(ApplicationConfiguration().configuration["warehouse"])
@@ -76,4 +76,4 @@ class testOauthIwhd(unittest.TestCase):
         
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest2.main()
