@@ -17,7 +17,7 @@
 #        Unit test for Image Factory test plan https://tcms.engineering.redhat.com/case/122798/?from_plan=4953
 #        Created by koca (mkoci@redhat.com)
 #        Date: 25/11/2011
-#        Modified: 25/11/2011
+#        Modified: 02/12/2011
 
 import unittest
 import logging
